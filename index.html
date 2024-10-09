@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Commentaires</title>
+</head>
+<body>
+  <div class="conteneur">
+    <h3>Liste des commentaires</h3>
+    
+    <div id="liste-commentaires">
+      <div class="commentaire">
+        <h4>Emily Selman</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui perferendis ratione eos ipsum incidunt, ut id debitis fugiat cumque omnis, exercitationem, dolores obcaecati maiores eaque architecto delectus distinctio odio et.</p>
+      </div>
+      <div class="commentaire">
+        <h4>Hector Gibbons</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, enim vitae quasi culpa est, excepturi cum voluptatum exercitationem id, deleniti similique maiores! Totam, itaque praesentium quod ipsa quos ratione et.</p>
+      </div>
+      <div class="commentaire">
+        <h4>Mark Edwards</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae accusantium quae doloribus. Nobis ipsam libero asperiores a velit ab nemo facere molestias quisquam. Libero, repudiandae dignissimos. Doloribus hic placeat soluta?</p>
+      </div>
+    </div>
+
+    <h3>Écrire un commentaire</h3>
+
+    <div id="message-erreur" class="message-erreur">        
+      <h4>Tous les champs doivent être remplis</h4>
+    </div>
+
+    <form action="#" method="POST">
+      <div class="champs-nom">
+        <div>
+          <label for="prenom">Prénom</label>
+          <input type="text" name="prenom" id="prenom" autocomplete="given-name">
+        </div>
+        <div>
+          <label for="nom">Nom</label>
+          <input type="text" name="nom" id="nom" autocomplete="family-name">
+        </div>
+      </div> 
+      <label for="message">Commentaire (500 caractère maximum )</label>
+      <textarea id="message" name="message" rows="4" maxlength="500" aria-describedby="message-max"></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>

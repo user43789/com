@@ -43,7 +43,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-bottom: 20px;
-    font-size: 1.1em; /* Augmente la taille de la police */
+    font-size: 1.1em; 
   }
   .champs-nom {
     display: flex;
@@ -51,8 +51,8 @@ body {
     gap: 100px;
   }
   .champs-nom div {
-    flex: 1; /* Permet aux champs de s'étendre également */
-    min-width: 0; /* Évite que les champs débordent */
+    flex: 1; 
+    min-width: 0; 
   }
   button {
     padding: 10px 15px;
